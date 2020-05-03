@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a433e3a2cf.js" crossorigin="anonymous"></script>
+  <title>TOODO</title>
+</head>
+<body>
+  <!-- container starts here -->
+<div class="container">
+  <!-- header -->
+  <header id="header">
+    <h1>TOODO</h1>
+  </header>
+
+  <!-- todo section -->
+  <section>
+    <div id="inputsec">
+      <input type="text" name="todo" id="textinput" placeholder="Type Here..">
+      <button id="addButton"><i class="fas fa-plus-circle"></i></button>
+      <div id="alert">Enter your todo here</div>
+    </div>
+    <!-- buttons -->
+    <div>
+    <button id="remove">Remove</button>
+    <button id="reset">Reset</button>
+    </div>
+
+    <!-- todo list goes here -->
+    <ul id="list">
+      <li>
+        <input type="checkbox" id="first">
+        <label for="first">
+          <i class="fas fa-check"></i>You Can Add..
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" id="second">
+        <label for="second">
+          <i class="fas fa-check"></i>Your TODO..
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" id="third">
+        <label for="third">
+          <i class="fas fa-check"></i>Just Here!
+        </label>
+      </li>
+      <li>
+        <input type="checkbox" id="fourth">
+        <label for="fourth">
+          <i class="fas fa-check"></i>Reset To Begin!
+        </label>
+      </li>
+    </ul>
+  </section>
+    </div>
+
+
+    <!-- jquery script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  
+  <!-- local script -->
+  <script src="script.js"></script>
+
+  <!-- header background extention -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: ".container",
+  mouseControls: true,
+  touchControls: true,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+</body>
+</html>
