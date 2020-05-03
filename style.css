@@ -3,7 +3,7 @@
 body {
   background: rgb(82, 171, 110) url('bg-pic.png') no-repeat center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: fixed;
   font-size: 20px;
   color: #7CEC9F;
   display: flex;
@@ -13,9 +13,9 @@ body {
 .container {
   font-family: 'Kalam', cursive;
   overflow: auto;
-  width: 300px;
-  min-height: 95vh;
-  margin: 10px auto;
+  width: 350px;
+  min-height: 87vh;
+  margin: 25px auto auto auto;
   border-radius: 30px;
   text-align: center;
   box-shadow: 0px 0px 80px 5px #07192f;
@@ -34,12 +34,17 @@ header {
   height: 170px;
 }
 
+h1 {
+  text-decoration: overline;
+}
+
 #reset, #remove {
   border: none;
-  padding: 5px 20px;
-  width: 100px;
+  padding: 7px 10px;
+  width: 15vh;
   border-radius: 20px;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
   text-transform: uppercase;
   margin: 10px auto;
   box-shadow: 0px 4px 8px 0px rgba(76, 76, 76, 0.741);
@@ -63,13 +68,13 @@ button#reset {
 input#textinput {
   border: none;
   border-radius: 20px;
-  height: 1.6em;
+  height: 1.9em;
   margin-left: 2px;
   width: 65%;
   outline: none;
-  padding: 2px 50px 2px 12px;
+  padding: 0px 50px 0px 12px;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 input#textinput:focus {
@@ -77,11 +82,10 @@ input#textinput:focus {
 }
 
 #addButton {
-  margin-top: 2.5px;
-  margin-left: -42px;
+  margin-left: -52px;
   text-align: center;
   vertical-align: middle;
-  font-size: 25px;
+  font-size: 35px;
   color: #07192f;
   background-color: rgba(255, 255, 255, 0);
   border: none;
